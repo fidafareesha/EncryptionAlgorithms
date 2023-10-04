@@ -17,7 +17,7 @@ public class CaeserCipher {
         StringBuilder text = new StringBuilder();
         char[] cipher = cipherText.toCharArray();
         for(int i = 0; i < cipher.length; i++) {
-            char decrypted = (char) (((cipher[i] - 'a' -key) % 26) + 'a');
+            char decrypted = (char) (((26 + cipher[i] - 'a' -key) % 26) + 'a');
             text.append(decrypted);
         }
         return text.toString();
