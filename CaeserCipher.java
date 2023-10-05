@@ -31,8 +31,8 @@ public class CaeserCipher {
         System.out.println("Enter a number:");
         int key = scan.nextInt();
         String cipherText = caeser.encrypt(plainText, key);
-        System.out.println(cipherText);
+        System.out.println("Encrypted text: "+cipherText);
         String decryptedText = caeser.decrypt(cipherText, key);
-        System.out.println(decryptedText);
+        System.out.println("Decrypted Text: "+decryptedText);
     }
 }
